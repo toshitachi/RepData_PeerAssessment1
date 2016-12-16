@@ -180,7 +180,7 @@ steps_by_day
 hist(steps_by_day$steps, main = paste("Total Steps Each Day"), col="blue", xlab="Number of Steps")
 ```
 
-![alt tag]((figure/Total steps by day.png )
+![alt tag](https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Total%20steps%20by%20day.png )
 
 ```r
 step_by_day_mean <- mean(steps_by_day$steps)
@@ -227,7 +227,7 @@ steps_by_interval <- aggregate(steps ~ interval, data, mean)
 plot(steps_by_interval$interval,steps_by_interval$steps, type="l", xlab="Interval", ylab="Number of Steps",main="Average Number of Steps per Day by Interval")
 ```
 
-![alt tag]((https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Avarage%20steps%20for%20each%20interval.png)
+![alt tag](https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Avarage%20steps%20for%20each%20interval.png)
 
 ## Use which.max() to find out the maximum steps, on average, across all the days
 
