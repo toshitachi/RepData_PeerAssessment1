@@ -134,8 +134,7 @@ steps_by_day
 ## 11 2012-10-13 12426
 ## 12 2012-10-14 15098
 ## 13 2012-10-15 10139
-## 14 2012-10-16 15084
-## 15 2012-10-17 13452
+## 14 2012-10-16 15084## 15 2012-10-17 13452
 ## 16 2012-10-18 10056
 ## 17 2012-10-19 11829
 ## 18 2012-10-20 10395
@@ -145,8 +144,7 @@ steps_by_day
 ## 22 2012-10-24  8355
 ## 23 2012-10-25  2492
 ## 24 2012-10-26  6778
-## 25 2012-10-27 10119
-## 26 2012-10-28 11458
+## 25 2012-10-27 10119## 26 2012-10-28 11458
 ## 27 2012-10-29  5018
 ## 28 2012-10-30  9819
 ## 29 2012-10-31 15414
@@ -183,13 +181,12 @@ steps_by_day
 hist(steps_by_day$steps, main = paste("Total Steps Each Day"), col="blue", xlab="Number of Steps")
 ```
 
-![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png)
+![plot of chunk unnamed-chunk-8](figure/Total steps by day.png )
 
 ```r
 step_by_day_mean <- mean(steps_by_day$steps)
 step_by_day_median <- median(steps_by_day$steps)
 ```
-
 
 ```r
 step_by_day_mean
@@ -199,7 +196,6 @@ step_by_day_mean
 ## [1] 10766.19
 ```
 Mean of total steps per day is 10766.19.
-
 
 ```r
 step_by_day_median
@@ -232,7 +228,7 @@ steps_by_interval <- aggregate(steps ~ interval, data, mean)
 plot(steps_by_interval$interval,steps_by_interval$steps, type="l", xlab="Interval", ylab="Number of Steps",main="Average Number of Steps per Day by Interval")
 ```
 
-![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png)
+![plot of chunk unnamed-chunk-12](figure/https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Avarage%20steps%20for%20each%20interval.png)
 
 ## Use which.max() to find out the maximum steps, on average, across all the days
 
@@ -324,7 +320,7 @@ head(steps_by_day_i)
 hist(steps_by_day_i$steps, main = paste("Total Steps Each Day"), col="blue", xlab="Number of Steps")
 ```
 
-![plot of chunk unnamed-chunk-19](figure/unnamed-chunk-19-1.png)
+![plot of chunk unnamed-chunk-19](figure/https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Total%20ssteps%20by%20day%20where%20NAs%20are%20filled%20with%20the%20mean.png)
 
 ## Calculate the mean and median steps with the filled in values 
 
@@ -363,7 +359,7 @@ Mean and Median of imputed data are 10766.19.
 
 For this part the <span style="color:red">weekdays()</span> function may be of some help here. Use the dataset with the filled-in missing values for this part.
 
-1.Create a new factor variable in the dataset with two levels â€? â€œweekdayâ€? and â€œweekendâ€? indicating whether a given date is a weekday or weekend day.
+1.Create a new factor variable in the dataset with two levels çª¶? çª¶å¿¤eekdayçª¶? and çª¶å¿¤eekendçª¶? indicating whether a given date is a weekday or weekend day.
 
 2.Make a panel plot containing a time series plot (i.e. <span style="color:red">type = "l"</span>) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). See the README file in the GitHub repository to see an example of what this plot should look like using simulated data.
 
@@ -371,7 +367,7 @@ For this part the <span style="color:red">weekdays()</span> function may be of s
 
 
 ```r
-steps_by_interval_i<- mutate(data_full, weektype = ifelse(weekdays(data_full$date) == "“y—j“ú" | weekdays(data_full$date) == "“ú—j“ú", "weekend", "weekday"))
+steps_by_interval_i<- mutate(data_full, weektype = ifelse(weekdays(data_full$date) == "åœŸæ›œæ—¥" | weekdays(data_full$date) == "æ—¥æ›œæ—¥", "weekend", "weekday"))
 ```
 
 
@@ -405,4 +401,4 @@ ggplot(steps_by_interval_i, aes(interval, steps,color = weektype )) +
     ylab("avarage number of steps")
 ```
 
-![plot of chunk unnamed-chunk-26](figure/unnamed-chunk-26-1.png)
+![plot of chunk unnamed-chunk-26](figure/https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Interval%20and%20average%20steps%20by%20weektype.png)
