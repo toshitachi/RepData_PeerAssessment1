@@ -5,6 +5,30 @@ date: '2016-12-16'
 output: html_document
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
 ## Introduction
 
 =====================
@@ -12,15 +36,6 @@ output: html_document
 This assignment makes use of data from a personal activity monitoring device. This device collects data at 5 minute intervals throughout the day. The data consists of two months of data from an anonymous individual collected during the months of October and November, 2012 and include the number of steps taken in 5 minute intervals each day.
 
 This document presents the results of the Reproducible Research's Project 1 in a report using a single R markdown document that can be processed by knitr and be transformed into an HTML file. 
-
-## Prepare R environment
-
-Thoughout this report I iclude the code that I used to generate the output my present. WHen writing code chunks in the R markdown document, always use <span style="color:red">echo = TRUE</span> so that someone else will be able to read rge code.
-
-```{r cars}
-library(knitr)
-opts_chunk$set(echo = TRUE)
-```
 
 
 ## Load necessary libraries
