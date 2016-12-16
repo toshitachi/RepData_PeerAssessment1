@@ -1,7 +1,7 @@
 ---
 title: "Reproducible Reserach Project 1"
 author: "Toshiyuki Tachibana"
-date: "2016-12-14"
+date: '2016-12-16'
 output: html_document
 ---
 
@@ -29,6 +29,7 @@ opts_chunk$set(echo = TRUE)
 library(dplyr)
 library(lubridate)
 library(ggplot2)
+library(rmarkdown)
 ```
 
 ##Loading and preprocessing the data
