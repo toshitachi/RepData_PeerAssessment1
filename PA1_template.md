@@ -338,7 +338,6 @@ rmean.i
 ## [1] 10766.19
 ```
 
-
 ```r
 rmedian.i
 ```
@@ -400,4 +399,4 @@ ggplot(steps_by_interval_i, aes(interval, steps,color = weektype )) +
     ylab("avarage number of steps")
 ```
 
-![alt tag]((figure/https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Interval%20and%20average%20steps%20by%20weektype.png)
+![alt tag](figure/https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Interval%20and%20average%20steps%20by%20weektype.png)
