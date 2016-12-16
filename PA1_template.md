@@ -141,8 +141,7 @@ steps_by_day
 ## 19 2012-10-21  8821
 ## 20 2012-10-22 13460
 ## 21 2012-10-23  8918
-## 22 2012-10-24  8355
-## 23 2012-10-25  2492
+## 22 2012-10-24  8355## 23 2012-10-25  2492
 ## 24 2012-10-26  6778
 ## 25 2012-10-27 10119## 26 2012-10-28 11458
 ## 27 2012-10-29  5018
@@ -181,7 +180,7 @@ steps_by_day
 hist(steps_by_day$steps, main = paste("Total Steps Each Day"), col="blue", xlab="Number of Steps")
 ```
 
-![plot of chunk unnamed-chunk-8](figure/Total steps by day.png )
+![alt tag]((figure/Total steps by day.png )
 
 ```r
 step_by_day_mean <- mean(steps_by_day$steps)
@@ -228,7 +227,7 @@ steps_by_interval <- aggregate(steps ~ interval, data, mean)
 plot(steps_by_interval$interval,steps_by_interval$steps, type="l", xlab="Interval", ylab="Number of Steps",main="Average Number of Steps per Day by Interval")
 ```
 
-![plot of chunk unnamed-chunk-12](figure/https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Avarage%20steps%20for%20each%20interval.png)
+![alt tag]((figure/https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Avarage%20steps%20for%20each%20interval.png)
 
 ## Use which.max() to find out the maximum steps, on average, across all the days
 
@@ -320,7 +319,7 @@ head(steps_by_day_i)
 hist(steps_by_day_i$steps, main = paste("Total Steps Each Day"), col="blue", xlab="Number of Steps")
 ```
 
-![plot of chunk unnamed-chunk-19](figure/https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Total%20ssteps%20by%20day%20where%20NAs%20are%20filled%20with%20the%20mean.png)
+![alt tag]((figure/https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Total%20ssteps%20by%20day%20where%20NAs%20are%20filled%20with%20the%20mean.png)
 
 ## Calculate the mean and median steps with the filled in values 
 
@@ -401,4 +400,4 @@ ggplot(steps_by_interval_i, aes(interval, steps,color = weektype )) +
     ylab("avarage number of steps")
 ```
 
-![plot of chunk unnamed-chunk-26](figure/https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Interval%20and%20average%20steps%20by%20weektype.png)
+![alt tag]((figure/https://github.com/toshitachi/RepData_PeerAssessment1/blob/master/figures/Interval%20and%20average%20steps%20by%20weektype.png)
